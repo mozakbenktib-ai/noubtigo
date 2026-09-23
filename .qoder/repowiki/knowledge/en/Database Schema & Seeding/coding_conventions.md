@@ -1,0 +1,4 @@
+- Migrations use anonymous classes extending `Migration` with explicit `up()` and `down()` methods for schema changes and rollbacks.
+- Foreign keys consistently use `foreignId()->constrained()` with explicit cascade or null-on-delete rules to maintain referential integrity.
+- Multi-tenant tables include a `company_id` foreign key to scope data to specific organizations.
+- Seeders are organized by domain (e.g., `RBACSeeder`, `PlanSeeder`) and called centrally from `DatabaseSeeder`.

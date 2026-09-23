@@ -1,0 +1,1 @@
+Backend tests use PHPUnit with Laravel's testing helpers; frontend tests use Python with `playwright` async API.

@@ -1,0 +1,1 @@
+Laravel 11+ (via `index.php` bootstrap), Bootstrap 5.3 (CDN), Vanilla JavaScript ES6+.

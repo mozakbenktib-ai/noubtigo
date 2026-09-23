@@ -1,0 +1,4 @@
+- Multi-tenancy is enforced through `TenantMiddleware` which resolves the current `Company` via subdomain or authenticated user, storing it in a singleton `TenantManager`.
+- Data isolation is automated via the `BelongsToTenant` trait and `TenantScope`, which injects `company_id` constraints into all Eloquent queries for tenant-scoped models.
+- Cross-module communication relies on Laravel's event system (e.g., `TicketCreated`, `DevicePaired`) and shared service interfaces like `PaymentProviderInterface` to decouple business logic from specific implementations.
+- Global concerns such as RBAC, localization, and subscription validation are applied via a centralized middleware pipeline (`CheckPermission`, `SetLocale`, `CheckSubscriptionValid`) defined in the application bootstrap.

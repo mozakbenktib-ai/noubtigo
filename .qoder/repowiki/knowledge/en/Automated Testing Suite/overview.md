@@ -1,0 +1,1 @@
+Provides backend integration tests using Laravel PHPUnit and frontend end-to-end tests using Playwright for ticket management workflows.

@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: framework_config
+title: Application Framework Configuration & Bootstrapping
+scope:
+    - config/
+    - bootstrap/
+    - routes/
+source_files: []
+depends_on: []
+related_to:
+    - path: public_assets
+    - path: database_layer

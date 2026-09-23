@@ -1,0 +1,3 @@
+- Translation files use flat or nested associative arrays returned by a PHP file, avoiding class-based structures for simple key-value mapping.
+- Placeholder variables in translated strings use the `:variable` syntax (e.g., `:time`, `:plan`) for dynamic data injection at runtime.
+- UI keys are grouped by functional module or page section (e.g., `hero`, `features`, `queue_management`) within the `ui.php` and `landing.php` files to maintain logical separation.

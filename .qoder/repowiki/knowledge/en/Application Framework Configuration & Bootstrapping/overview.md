@@ -1,0 +1,1 @@
+Centralizes Laravel application bootstrapping, service provider registration, middleware pipeline definition, and multi-domain configuration for routing, database, authentication, and permissions.

@@ -1,0 +1,2 @@
+- Backend feature tests extend the module's abstract `Tests\TestCase` and use the `RefreshDatabase` trait for state isolation.
+- Frontend E2E tests are structured as individual async Python functions (`run_test`) that manage their own Playwright browser lifecycle.

@@ -1,0 +1,1 @@
+Laravel 11+ with PHP 8.2+, MySQL/SQLite for multi-tenant relational data, Vite for asset bundling, and Laravel Reverb for real-time WebSocket broadcasting.

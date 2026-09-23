@@ -1,0 +1,112 @@
+<?php
+
+return [
+    // Section header
+    'title' => 'Tarification simple et transparente',
+    'subtitle' => 'Choisissez le forfait adapté à votre activité. Passez à un forfait supérieur ou inférieur à tout moment.',
+    'monthly' => 'Mensuel',
+    'yearly' => 'Annuel',
+    'save_badge' => '2 mois offerts',
+    'per_month' => '/mois',
+    'currency' => 'MAD',
+    'most_popular' => 'Le plus populaire',
+    'current_plan' => 'Forfait actuel',
+    'no_hidden_fees' => 'Aucun frais caché • Annulation à tout moment ',
+
+    // Feature labels
+    'staff' => 'Membres du personnel',
+    'rooms' => 'Salles',
+    'tickets' => 'Tickets/mois',
+    'customers' => 'Clients',
+    'unlimited' => 'Illimité',
+    'everything_unlimited' => 'Tout illimité',
+
+    // Common features
+    'features' => [
+        'queue_management' => 'Gestion des files d\'attente',
+        'appointments' => 'Prise de rendez-vous',
+        'display_screens' => 'Écrans d\'affichage',
+        'notifications' => 'Notifications',
+        'whatsapp' => 'Intégration WhatsApp',
+        'analytics' => 'Analytique avancée',
+        'customer_management' => 'Gestion des clients',
+        'priority_queue' => 'File d\'attente prioritaire',
+        'multi_language' => 'Support multilingue',
+        'real_time_tracking' => 'Suivi en temps réel',
+    ],
+
+    // Plans
+    'plans' => [
+        'starter' => [
+            'name' => 'Starter',
+            'description' => 'Parfait pour les petites entreprises qui débutent.',
+            'price_monthly' => '29',
+            'price_yearly' => '279',
+            'cta' => 'Commencer',
+            'staff' => '2',
+            'rooms' => '1',
+            'tickets' => '500',
+            'customers' => '50',
+            'includes' => [
+                'Gestion des files d\'attente',
+                'Écran d\'affichage basique',
+                'Notifications par email',
+                'Gestion des clients',
+            ],
+        ],
+        'professional' => [
+            'name' => 'Professionnel',
+            'description' => 'Pour les entreprises en croissance qui ont besoin de plus de puissance.',
+            'price_monthly' => '119',
+            'price_yearly' => '1 140',
+            'cta' => 'Passer au supérieur',
+            'staff' => '5',
+            'rooms' => '3',
+            'tickets' => '3 000',
+            'customers' => '200',
+            'includes' => [
+                'Tout dans Starter',
+                'Prise de rendez-vous',
+                'Notifications WhatsApp',
+                'Analytique avancée',
+                'File d\'attente prioritaire',
+            ],
+        ],
+        'business' => [
+            'name' => 'Business',
+            'description' => 'Pour les entreprises établies avec un volume élevé.',
+            'price_monthly' => '249',
+            'price_yearly' => '2 390',
+            'cta' => 'Passer au supérieur',
+            'staff' => '15',
+            'rooms' => '5',
+            'tickets' => '10 000',
+            'customers' => '1 000',
+            'includes' => [
+                'Tout dans Professionnel',
+                'Écrans d\'affichage multiples',
+                'Notifications SMS & WhatsApp',
+                'Suivi en temps réel',
+                'Support multilingue',
+            ],
+        ],
+        'premium' => [
+            'name' => 'Premium',
+            'description' => 'Pour les grandes organisations avec des besoins spécifiques.',
+            'price_monthly' => '699',
+            'price_yearly' => '6 710',
+            'cta' => 'Passer au supérieur',
+            'staff' => 'Illimité',
+            'rooms' => 'Illimité',
+            'tickets' => 'Illimité',
+            'customers' => 'Illimité',
+            'includes' => [
+                'Tout dans Business',
+                'Personnel & salles illimités',
+                'Tickets & clients illimités',
+                'Tous les canaux de notification',
+                'Tableau de bord analytique complet',
+            ],
+        ],
+    ],
+];

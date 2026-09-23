@@ -1,0 +1,1 @@
+Manages localized text resources for the application's public landing pages, pricing, and internal dashboard interface across English, French, and Arabic.

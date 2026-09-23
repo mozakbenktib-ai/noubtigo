@@ -1,0 +1,4 @@
+- **Structure**: Organized by locale directories (`en`, `fr`, `ar`) containing PHP files that return associative arrays of translation keys.
+- **Scope**: Covers four primary domains: `landing.php` (marketing/hero sections), `pricing.php` (subscription plans), `ui.php` (comprehensive dashboard labels, forms, and notifications), and `validation.php` (form error messages).
+- **Integration**: Designed for consumption by a PHP-based localization service (likely Laravel's `__()` helper or `trans()` function), where keys like `ui.dashboard` or `pricing.plans.starter.name` are dynamically resolved based on the user's active session locale.
+- **Consistency**: Maintains parallel key structures across all three supported languages to ensure feature parity in the UI regardless of language selection.

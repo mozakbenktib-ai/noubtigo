@@ -1,0 +1,19 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:8000",
+  "loginUser": "ultra@gmail.com",
+  "loginPassword": "123456789",
+  "executionArgs": {
+    "projectName": "Noubtigo",
+    "projectPath": "C:/Users/ZakBE/Documents/Noubtigo",
+    "testIds": [],
+    "additionalInstruction": "",
+    "serverMode": "development",
+    "envs": {
+      "API_KEY": "sk-user-mSdGv7oEHrpwUAg_-EvlLQblQD_QALdnazGNfKhtGFeMlGQB1lUd-VXINCTE6zqD-KGSORWi3xIqMTWJsmnLVF14yGELWBJRs41NoXE4aKcSqDzYtkcH_Pesm6ym49WyeEA"
+    }
+  },
+  "serverPort": 56235
+}

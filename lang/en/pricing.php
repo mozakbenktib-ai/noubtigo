@@ -1,0 +1,112 @@
+<?php
+
+return [
+    // Section header
+    'title' => 'Simple, Transparent Pricing',
+    'subtitle' => 'Choose the plan that fits your business. Upgrade or downgrade anytime.',
+    'monthly' => 'Monthly',
+    'yearly' => 'Yearly',
+    'save_badge' => '2 months free',
+    'per_month' => '/mo',
+    'currency' => 'MAD',
+    'most_popular' => 'Most Popular',
+    'current_plan' => 'Current Plan',
+    'no_hidden_fees' => 'No hidden fees • Cancel anytime',
+
+    // Feature labels
+    'staff' => 'Staff members',
+    'rooms' => 'Rooms',
+    'tickets' => 'Tickets/month',
+    'customers' => 'Customers',
+    'unlimited' => 'Unlimited',
+    'everything_unlimited' => 'Everything unlimited',
+
+    // Common features
+    'features' => [
+        'queue_management' => 'Queue management',
+        'appointments' => 'Appointment scheduling',
+        'display_screens' => 'Display screens',
+        'notifications' => 'Notifications',
+        'whatsapp' => 'WhatsApp integration',
+        'analytics' => 'Advanced analytics',
+        'customer_management' => 'Customer management',
+        'priority_queue' => 'Priority queue',
+        'multi_language' => 'Multi-language support',
+        'real_time_tracking' => 'Real-time tracking',
+    ],
+
+    // Plans
+    'plans' => [
+        'starter' => [
+            'name' => 'Starter',
+            'description' => 'Perfect for small businesses just getting started.',
+            'price_monthly' => '29',
+            'price_yearly' => '279',
+            'cta' => 'Get Started',
+            'staff' => '2',
+            'rooms' => '1',
+            'tickets' => '500',
+            'customers' => '50',
+            'includes' => [
+                'Queue management',
+                'Basic display screen',
+                'Email notifications',
+                'Customer management',
+            ],
+        ],
+        'professional' => [
+            'name' => 'Professional',
+            'description' => 'For growing businesses that need more power.',
+            'price_monthly' => '119',
+            'price_yearly' => '1,140',
+            'cta' => 'Upgrade',
+            'staff' => '5',
+            'rooms' => '3',
+            'tickets' => '3,000',
+            'customers' => '200',
+            'includes' => [
+                'Everything in Starter',
+                'Appointment scheduling',
+                'WhatsApp notifications',
+                'Advanced analytics',
+                'Priority queue',
+            ],
+        ],
+        'business' => [
+            'name' => 'Business',
+            'description' => 'For established businesses with high volume needs.',
+            'price_monthly' => '249',
+            'price_yearly' => '2,390',
+            'cta' => 'Upgrade',
+            'staff' => '15',
+            'rooms' => '5',
+            'tickets' => '10,000',
+            'customers' => '1,000',
+            'includes' => [
+                'Everything in Professional',
+                'Multiple display screens',
+                'SMS & WhatsApp notifications',
+                'Real-time tracking',
+                'Multi-language support',
+            ],
+        ],
+        'premium' => [
+            'name' => 'Premium',
+            'description' => 'For large organizations with custom requirements.',
+            'price_monthly' => '699',
+            'price_yearly' => '6,710',
+            'cta' => 'Upgrade',
+            'staff' => 'Unlimited',
+            'rooms' => 'Unlimited',
+            'tickets' => 'Unlimited',
+            'customers' => 'Unlimited',
+            'includes' => [
+                'Everything in Business',
+                'Unlimited staff & rooms',
+                'Unlimited tickets & customers',
+                'All notification channels',
+                'Full analytics dashboard',
+            ],
+        ],
+    ],
+];

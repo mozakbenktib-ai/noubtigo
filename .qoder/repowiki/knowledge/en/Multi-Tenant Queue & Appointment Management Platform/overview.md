@@ -1,0 +1,1 @@
+Orchestrates a multi-tenant SaaS architecture for queue management and appointment scheduling, enforcing data isolation via subdomain routing and shared service contracts.

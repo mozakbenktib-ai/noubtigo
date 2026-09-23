@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Queue | Noubtigo</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="d-flex align-items-center mb-5 house shadow-sm rounded-3 p-2 bg-white">
+            <div class="bg-success text-white rounded-2 p-2 me-2 pulse">
+                <i class="bi bi-lightning-charge-fill fs-5"></i>
+            </div>
+            <h4 class="mb-0 fw-bold text-dark">Noubtigo</h4>
+        </div>
+
+        <ul class="nav flex-column mt-4">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="bi bi-grid-fill"></i> Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="users.html">
+                    <i class="bi bi-people-fill"></i> Users
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="appointments.html">
+                    <i class="bi bi-calendar-check-fill"></i> Appointments
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="queue.html">
+                    <i class="bi bi-ticket-perforated-fill"></i> Queue
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">
+                    <i class="bi bi-briefcase-fill"></i> Services
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="rooms.html">
+                    <i class="bi bi-door-open-fill"></i> Rooms
+                </a>
+            </li>
+            <li class="nav-item mt-auto">
+                <a class="nav-link" href="#">
+                    <i class="bi bi-gear-fill"></i> Settings
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Topbar -->
+        <header class="d-flex justify-content-between align-items-center mb-5 fade-in">
+            <div>
+                <h2 class="fw-bold mb-0">Real-time Queue</h2>
+                <p class="text-secondary">Track customer waiting times and service assignments.</p>
+            </div>
+            
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn btn-gradient px-4" data-bs-toggle="modal" data-bs-target="#addTicketModal">
+                    <i class="bi bi-ticket-perforated me-2"></i> Add Ticket
+                </button>
+            </div>
+        </header>
+
+        <!-- Queue Area -->
+        <div class="row g-4 fade-in">
+            <!-- Active Queue Table -->
+            <div class="col-lg-12">
+                <div class="glass-card p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h5 class="fw-bold mb-0">Waiting List</h5>
+                        <div class="d-flex gap-2">
+                            <span class="badge bg-success-subtle text-success px-3 py-2 rounded-pill small">Active: 12</span>
+                            <span class="badge bg-warning-subtle text-warning px-3 py-2 rounded-pill small">Waiting: 8</span>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="text-secondary small text-uppercase">
+                                <tr>
+                                    <th># Ticket</th>
+                                    <th>Customer</th>
+                                    <th>Service</th>
+                                    <th>Room</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="fw-bold text-success">#A124</span></td>
+                                    <td>Ahmed Benali</td>
+                                    <td>General Checkup</td>
+                                    <td>Room A</td>
+                                    <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                                    <td>
+                                        <div class="d-flex gap-2">
+                                            <button class="btn btn-success btn-sm"><i class="bi bi-check-lg"></i> Done</button>
+                                            <button class="btn btn-light btn-sm"><i class="bi bi-three-dots"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="fw-bold text-success">#A125</span></td>
+                                    <td>Sara Mansouri</td>
+                                    <td>Consultation</td>
+                                    <td>Room B</td>
+                                    <td><span class="badge bg-warning-subtle text-warning">Waiting</span></td>
+                                    <td>
+                                        <div class="d-flex gap-2">
+                                            <button class="btn btn-primary btn-sm"><i class="bi bi-telephone me-1"></i> Call</button>
+                                            <button class="btn btn-light btn-sm"><i class="bi bi-three-dots"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal: Add Ticket -->
+    <div class="modal fade" id="addTicketModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card border-0">
+                <div class="modal-header border-0 p-4">
+                    <h5 class="fw-bold mb-0">Issue New Ticket</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <!-- Add Ticket Form... -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

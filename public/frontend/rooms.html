@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Rooms | Noubtigo</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="d-flex align-items-center mb-5 house shadow-sm rounded-3 p-2 bg-white">
+            <div class="bg-success text-white rounded-2 p-2 me-2 pulse">
+                <i class="bi bi-lightning-charge-fill fs-5"></i>
+            </div>
+            <h4 class="mb-0 fw-bold text-dark">Noubtigo</h4>
+        </div>
+
+        <ul class="nav flex-column mt-4">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="bi bi-grid-fill"></i> Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="users.html">
+                    <i class="bi bi-people-fill"></i> Users
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="appointments.html">
+                    <i class="bi bi-calendar-check-fill"></i> Appointments
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="queue.html">
+                    <i class="bi bi-ticket-perforated-fill"></i> Queue
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">
+                    <i class="bi bi-briefcase-fill"></i> Services
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="rooms.html">
+                    <i class="bi bi-door-open-fill"></i> Rooms
+                </a>
+            </li>
+            <li class="nav-item mt-auto">
+                <a class="nav-link" href="#">
+                    <i class="bi bi-gear-fill"></i> Settings
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Topbar -->
+        <header class="d-flex justify-content-between align-items-center mb-5 fade-in">
+            <div>
+                <h2 class="fw-bold mb-0">Rooms</h2>
+                <p class="text-secondary">Manage the physical and virtual spaces for your appointments.</p>
+            </div>
+            
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn btn-gradient px-4" data-bs-toggle="modal" data-bs-target="#addRoomModal">
+                    <i class="bi bi-plus-lg me-2"></i> Add Room
+                </button>
+            </div>
+        </header>
+
+        <!-- Rooms Grid -->
+        <div class="row g-4 fade-in" id="roomsGrid">
+            <!-- Sample Room Card 1 -->
+            <div class="col-md-4">
+                <div class="glass-card p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div class="bg-primary-subtle text-primary p-3 rounded-3">
+                            <i class="bi bi-door-open fs-4"></i>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-light btn-sm" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></button>
+                            <ul class="dropdown-menu border-0 shadow">
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h5 class="fw-bold mb-2">Consultation Room A</h5>
+                    <p class="text-secondary small mb-4">A private space for patient consultations.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <span class="badge bg-light text-dark px-3 py-2 rounded-pill small">Capacity: 2</span>
+                        <span class="badge bg-success-subtle text-success px-3 py-2 rounded-pill small">Active</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more sample cards... -->
+        </div>
+    </main>
+
+    <!-- Modal: Add Room -->
+    <div class="modal fade" id="addRoomModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card border-0">
+                <div class="modal-header border-0 p-4">
+                    <h5 class="fw-bold mb-0">Add New Room</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <!-- Add Room Form... -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

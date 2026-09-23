@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: database_layer
+title: Database Schema & Seeding
+scope:
+    - database/
+source_files: []
+depends_on: []
+related_to:
+    - path: tests
+    - path: framework_config

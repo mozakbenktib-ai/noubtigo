@@ -1,0 +1,5 @@
+- **Schema Definition**: Uses Laravel Migrations to define tables for core entities (Users, Companies, Customers), business logic (Appointments, Tickets, Services), and SaaS features (Plans, Subscriptions, Invoices).
+- **RBAC Implementation**: Implements a custom Role-Based Access Control system with multi-tenancy support, utilizing pivot tables (`role_user`, `permission_role`, `role_company`) and global/local permission flags.
+- **Multi-Tenancy**: Enforces tenant isolation through `company_id` foreign keys on most business tables and dedicated pivot tables for role/permission scoping.
+- **Data Initialization**: Uses Laravel Seeders (`DatabaseSeeder`, `RBACSeeder`, `PlanSeeder`) to populate essential reference data like languages, subscription plans, and default roles.
+- **Identifier Strategy**: Employs auto-incrementing IDs as primary keys, with a secondary migration phase adding UUIDs to key entities for external referencing.

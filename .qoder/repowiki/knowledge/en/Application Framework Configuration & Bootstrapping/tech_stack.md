@@ -1,0 +1,1 @@
+Laravel 11+ framework using Spatie Laravel Permission for RBAC and Laravel Sanctum for API token authentication.

@@ -1,0 +1,3 @@
+- All tenant-scoped models use the `BelongsToTenant` trait to automatically apply `TenantScope` and set `company_id` on creation.
+- Business logic is encapsulated in dedicated Service classes within each module (e.g., `AppointmentService`, `QueueService`) rather than controllers.
+- External integrations like payments are abstracted behind interfaces (e.g., `PaymentProviderInterface`) to allow swappable providers.

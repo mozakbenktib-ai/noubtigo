@@ -1,0 +1,3 @@
+- Middleware aliases are defined in `bootstrap/app.php` to map short string keys (e.g., 'permission', 'system_admin') to specific middleware classes for concise route protection.
+- Configuration files consistently use `env()` helpers with default values to allow environment-specific overrides for sensitive or deployment-dependent settings.
+- Route groups in `routes/web.php` consistently apply middleware stacks (e.g., `auth`, `permission`, `system_admin`) to enforce security boundaries at the prefix level rather than on individual routes.

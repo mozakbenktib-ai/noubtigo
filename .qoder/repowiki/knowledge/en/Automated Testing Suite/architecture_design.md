@@ -1,0 +1,4 @@
+- The module is split into two distinct testing environments: `tests/` for backend PHP/Laravel integration tests and `testsprite_tests/` for frontend Python/Playwright E2E tests.
+- Backend tests (`tests/`) follow Laravel conventions with `Feature` and `Unit` subdirectories, extending a base `TestCase` that integrates with `Illuminate\Foundation\Testing`.
+- Frontend tests (`testsprite_tests/`) are implemented as standalone async Python scripts using Playwright, driven by a JSON test plan (`testsprite_frontend_test_plan.json`) that defines user flows and assertions.
+- Backend tests utilize `RefreshDatabase` and a `TenantManager` to isolate multi-tenant data during execution.

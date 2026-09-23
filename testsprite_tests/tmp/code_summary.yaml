@@ -1,0 +1,34 @@
+version: "2"
+type: frontend
+tech_stack:
+  - language: PHP
+  - framework: Laravel
+  - ui_library: Blade
+  - other: Vite
+routes:
+  - path: /dashboard
+    file: resources/views/layouts/dashboard.blade.php
+    auth_required: true
+    description: Main dashboard view
+  - path: /api/tickets
+    file: routes/api.php
+    auth_required: true
+    description: Ticket management API endpoints
+features:
+  - name: Ticket Management
+    description: Create, update, and view support tickets
+    files:
+      - app/Http/Controllers/TicketController.php
+      - resources/views/tickets/*.blade.php
+    entry_route: /api/tickets
+    user_interactions:
+      - Submit new ticket via form
+      - View list of tickets
+      - Update ticket status
+    api_calls:
+      - method: GET
+        endpoint: /api/tickets
+      - method: POST
+        endpoint: /api/tickets
+    auth_required: true
+known_limitations: []

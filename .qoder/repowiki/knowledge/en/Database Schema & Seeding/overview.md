@@ -1,0 +1,1 @@
+Defines the application's relational database schema, multi-tenant RBAC structure, and initial data seeding via Laravel migrations and seeders.

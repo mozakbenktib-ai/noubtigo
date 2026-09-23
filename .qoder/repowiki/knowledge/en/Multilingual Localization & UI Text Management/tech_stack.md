@@ -1,0 +1,1 @@
+PHP array-based localization files, compatible with Laravel's localization engine.

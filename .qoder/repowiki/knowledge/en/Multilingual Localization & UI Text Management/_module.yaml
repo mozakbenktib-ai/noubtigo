@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: i18n
+title: Multilingual Localization & UI Text Management
+scope:
+    - lang/
+source_files: []
+depends_on: []
+related_to:
+    - path: public_assets

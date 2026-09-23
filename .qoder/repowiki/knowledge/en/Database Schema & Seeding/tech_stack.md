@@ -1,0 +1,1 @@
+Laravel Migrations and Seeders for schema management; SQLite for local development/testing (evidenced by `database.sqlite` and driver checks in migrations).

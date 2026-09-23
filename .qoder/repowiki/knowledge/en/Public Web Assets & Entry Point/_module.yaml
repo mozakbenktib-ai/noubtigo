@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: public_assets
+title: Public Web Assets & Entry Point
+scope:
+    - public/
+source_files: []
+depends_on: []
+related_to:
+    - path: tests
+    - path: framework_config
+    - path: i18n

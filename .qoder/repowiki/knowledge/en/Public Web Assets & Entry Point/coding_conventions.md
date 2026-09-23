@@ -1,0 +1,3 @@
+- API client uses a static class pattern (`ApiClient`) in `api.js` to centralize fetch logic and token management.
+- Frontend pages consistently load Bootstrap and custom CSS via CDN and local paths in the `<head>` section.
+- Authentication tokens are persisted in `localStorage` under the key `noubtigo_token`.

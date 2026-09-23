@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: tests
+title: Automated Testing Suite
+scope:
+    - tests/
+    - testsprite_tests/
+source_files: []
+depends_on: []
+related_to:
+    - path: database_layer
+    - path: public_assets

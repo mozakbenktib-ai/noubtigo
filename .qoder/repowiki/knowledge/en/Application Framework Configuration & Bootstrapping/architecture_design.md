@@ -1,0 +1,4 @@
+- Entry point: `bootstrap/app.php` uses `Application::configure()` to define routing paths (`web`, `api`, `commands`, `channels`) and register global/aliased middleware (e.g., `TenantMiddleware`, `CheckPermission`).
+- Service providers are registered via `bootstrap/providers.php`, currently loading `AppServiceProvider`.
+- Configuration is split across `config/*.php` files, handling core services like `database` (MySQL/SQLite/Redis), `auth` (Sanctum/Spatie Permission), `queue`, `mail`, and `logging`.
+- Routing boundaries are defined in `routes/web.php` (protected dashboard, public auth, webhooks) and `routes/api.php` (versioned API v1 with Sanctum auth), establishing clear separation between web UI, API consumers, and public endpoints.

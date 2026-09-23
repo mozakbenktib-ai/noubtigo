@@ -1,0 +1,4 @@
+- Entry Point: `public/index.php` bootstraps the Laravel kernel and handles all HTTP requests.
+- Server Config: `.htaccess` manages URL rewriting to route traffic through `index.php`.
+- Frontend Structure: `public/frontend/` contains a multi-page vanilla JavaScript application (HTML/CSS/JS) that communicates with the backend via `api.js`.
+- PWA Support: `manifest.json` and `service-worker.js` provide offline capabilities and asset caching for the web interface.

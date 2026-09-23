@@ -1,0 +1,1 @@
+Serves as the Laravel application entry point and hosts static frontend assets, including a vanilla JS dashboard and PWA configuration.
